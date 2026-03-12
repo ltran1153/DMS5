@@ -19,6 +19,7 @@
     <script src="keyboardController.js" defer></script>
 </head>
 <body>
+<!-- DISCLAIMER!!! there might be some inconsistencies in the structure of my coding, this is because as I progress I find more efficient ways to achieve my goals, therefore my older code may be longer/different than my newer code even though they achieve the same results-->
 
     <dialog id="intro-dialog">
         <p>Hey this page wants to make some noise, is that OK?</p>
@@ -33,26 +34,36 @@
         <!-- These are the three range elements we will be working on for this exercise -->
          <div class="container1">
         <div class="innercontainer1">
-            <span>🦻🏿</span>
+           <div id="reducevolume">
+            <span>🦻🏿
+                <h4>Reduce Volume</h4>
+            </span>
+            </div>
         <input type="range" id="var1Range" min="-48" max="0" step="1" value="1">
+        <div id="increasevolume">
         <span>👂🏿</span>
+        </div>
         </div>
         <label for="var1Range"> Volume</label>
          </div>
-<div class="container2">
+<div class="container2">    
     <div class="innercontainer2">
+        <div id="reducereverb">
         <span>👽</span>
+        </div>
         <input type="range" id="var2Range" min="1" max="25" step="1" value="5">
+        <div id="increasereverb">
         <span>👽👽👽👽</span>
+        </div>
         </div>
         <label for="var2Range">Reverb   </label>
         </div>
 
 <div class="container3">
     <div class="innercontainer3">
-        <span>🐂</span>
+        <span id="reducepitch">🐂</span>
         <input type="range" id="var3Range" min="1" max="100" step="1" value="1">
-           <span>🍽️</span>
+           <span id="increasepitch">🍽️</span>
         </div>
         <label for="var3Range">Pitch</label>
         </div>

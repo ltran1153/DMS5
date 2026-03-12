@@ -45,3 +45,21 @@ dialog[open] {
     align-items: center;
     gap: 1rem;
 }
+
+.container1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h2 {
+    margin-top: 100px;
+    display: flex;
+flex-direction: column;
+align-content: center;
+}
+
+h3 {
+    margin-top: 40px;
+    align-content: center;
+}

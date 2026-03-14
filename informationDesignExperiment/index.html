@@ -1,183 +1,208 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, 
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Information Design Experiment</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
 
-    <link rel="stylesheet" href="infoDesignReset.css">
-    <link rel="stylesheet" href="infoDesignStyle.css">
-    <link rel="stylesheet" href="keyboardControllerStyle.css">
+    <link rel="stylesheet" href="infoDesignReset.css" />
+    <link rel="stylesheet" href="infoDesignStyle.css" />
+    <link rel="stylesheet" href="keyboardControllerStyle.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.3.5/Tone.js" integrity="sha512-F1myjNkIKU5XJtOs1HXRo/zOjiUsABgFEEGKLx/riwK82jRThZFebEnfF2HWo9eeC+iC1Nwwnn9Vj6OGq+r7rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.3.5/Tone.js"
+      integrity="sha512-F1myjNkIKU5XJtOs1HXRo/zOjiUsABgFEEGKLx/riwK82jRThZFebEnfF2HWo9eeC+iC1Nwwnn9Vj6OGq+r7rQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="main.js" defer></script>
     <script src="keyboardController.js" defer></script>
-</head>
-<body>
-<!-- DISCLAIMER!!! there might be some inconsistencies in the structure of my coding, this is because as I progress I find more efficient ways to achieve my goals, therefore my older code may be longer/different than my newer code even though they achieve the same results-->
+  </head>
+  <body>
+    <!-- DISCLAIMER!!! there might be some inconsistencies in the structure of my coding, 
+ this is because as I progress I find more efficient ways to achieve my goals, 
+ therefore my older code may be longer/different than my newer code even though they achieve the same results-->
 
     <dialog id="intro-dialog">
-        <p>Hey this page wants to make some noise, is that OK?</p>
-        <button id="dialog-close-button" autofocus>That's OK</button>
+      <p>Hey this page wants to make some noise, is that OK?</p>
+      <button id="dialog-close-button" autofocus>That's OK</button>
     </dialog>
 
     <main>
+      <h1>Information Design Experiment</h1>
 
-        <h1>Information Design Experiment</h1>
-
-        <!-- !!!! -->
-        <!-- These are the three range elements we will be working on for this exercise -->
-         <div class="container1">
+      <!-- !!!! -->
+      <!-- These are the three range elements we will be working on for this exercise -->
+      <div class="container1">
         <div class="innercontainer1">
-           <div id="reducevolume">
-             <span id="hover1">🦻🏿</span>
-            <span id="tooltip1">
-                Reduce Volume
-            </span> 
-            </div>
-        <input type="range" id="var1Range" min="-48" max="0" step="1" value="-24">
-        <div id="increasevolume">
+          <div id="reducevolume">
+            <span id="hover1">🦻🏿</span>
+            <span id="tooltip1"> Reduce Volume </span>
+          </div>
+          <input
+            type="range"
+            id="var1Range"
+            min="-48"
+            max="0"
+            step="1"
+            value="-24"
+          />
+          <div id="increasevolume">
             <span id="hover2">👂🏿</span>
             <span id="tooltip2">Increase Volume</span>
-        </div>
+          </div>
         </div>
         <label for="var1Range"> Volume</label>
-         </div>
-<div class="container2">    
-    <div class="innercontainer2">
-        <div id="reducereverb">
+      </div>
+      <div class="container2">
+        <div class="innercontainer2">
+          <div id="reducereverb">
             <span id="hover3">👽</span>
             <span id="tooltip3">Reduce Reverb</span>
-        </div>
-        <input type="range" id="var2Range" min="1" max="25" step="1" value="13">
-        <div id="increasereverb">
+          </div>
+          <input
+            type="range"
+            id="var2Range"
+            min="1"
+            max="25"
+            step="1"
+            value="13"
+          />
+          <div id="increasereverb">
             <span id="hover4">👽👽👽👽</span>
             <span id="tooltip4">Increase Reverb</span>
-        </div>
+          </div>
         </div>
         <label for="var2Range">Reverb</label>
-        </div>
+      </div>
 
-<div class="container3">
-    <div class="innercontainer3">
-        <span id="reducepitch">🐂</span>
-        <span id="tooltip5">Reduce Pitch</span>
-        <input type="range" id="var3Range" min="1" max="100" step="1" value="50">
-           <span id="increasepitch">🍽️</span>
-           <span id="tooltip6">Increase Pitch</span>
+      <div class="container3">
+        <div class="innercontainer3">
+          <span id="reducepitch">🐂</span>
+          <span id="tooltip5">Reduce Pitch</span>
+          <input
+            type="range"
+            id="var3Range"
+            min="1"
+            max="100"
+            step="1"
+            value="50"
+          />
+          <span id="increasepitch">🍽️</span>
+          <span id="tooltip6">Increase Pitch</span>
         </div>
         <label for="var3Range">Pitch</label>
-        </div>
-        <!-- !!!! -->
+      </div>
+      <!-- !!!! -->
 
-        <!--
+      <!--
         This is a template for a keyboard controller : we will look at building this style of
         input in class, but feel free to reference my code patter. I've modularised the CSS &
         JS portions into their own file, but they rely on an HTML structure like that below.
         -->
-        <div class="keyboardContainer">
-            <div class="octaveContainer" data-octave="3">
-                <div class="whiteKeyContainer">
-                    <button class="whiteKey" data-note="c">
-                        <h2>C</h2>
-                    </button>
-                    <button class="whiteKey" data-note="d">
-                        <h2>D</h2>
-                    </button>
-                    <button class="whiteKey" data-note="e">
-                        <h2>E</h2>
-                    </button>
-                    <button class="whiteKey" data-note="f">
-                        <h2>F</h2>
-                    </button>
-                    <button class="whiteKey" data-note="g">
-                        <h2>G</h2>
-                    </button>
-                    <button class="whiteKey" data-note="a">
-                        <h2>A</h2>
-                    </button>
-                    <button class="whiteKey" data-note="b">
-                        <h2>B</h2>
-                    </button>
-                </div>
-                <div class="blackKeyContainer">
-                    <div class="blackKeySpacer"></div>
-                    <button class="blackKey" data-note="c#">
-                        <h3>C#</h3>
-                    </button>
-                    <button class="blackKey" data-note="d#">
-                        <h3>D#</h3>
-                    </button>
-                    <div class="blackKeySpacer"></div>
-                    <div class="blackKeySpacer"></div>
-                    <button class="blackKey" data-note="f#">
-                        <h3>F#</h3>
-                    </button>
-                    <button class="blackKey" data-note="g#">
-                        <h3>G#</h3>
-                    </button>
-                    <button class="blackKey" data-note="a#">
-                        <h3>A#</h3>
-                    </button>
-                    <div class="blackKeySpacer"></div>
-                </div>
-            </div>
-
-            <div class="octaveContainer" data-octave="4">
-                <div class="whiteKeyContainer">
-                    <button class="whiteKey" data-note="c">
-                        <h2>C</h2>
-                    </button>
-                    <button class="whiteKey" data-note="d">
-                        <h2>D</h2>
-                    </button>
-                    <button class="whiteKey" data-note="e">
-                        <h2>E</h2>
-                    </button>
-                    <button class="whiteKey" data-note="f">
-                        <h2>F</h2>
-                    </button>
-                    <button class="whiteKey" data-note="g">
-                        <h2>G</h2>
-                    </button>
-                    <button class="whiteKey" data-note="a">
-                        <h2>A</h2>
-                    </button>
-                    <button class="whiteKey" data-note="b">
-                        <h2>B</h2>
-                    </button>
-                </div>
-                <div class="blackKeyContainer">
-                    <div class="blackKeySpacer"></div>
-                    <button class="blackKey" data-note="c#">
-                        <h3>C#</h3>
-                    </button>
-                    <button class="blackKey" data-note="d#">
-                        <h3>D#</h3>
-                    </button>
-                    <div class="blackKeySpacer"></div>
-                    <div class="blackKeySpacer"></div>
-                    <button class="blackKey" data-note="f#">
-                        <h3>F#</h3>
-                    </button>
-                    <button class="blackKey" data-note="g#">
-                        <h3>G#</h3>
-                    </button>
-                    <button class="blackKey" data-note="a#">
-                        <h3>A#</h3>
-                    </button>
-                    <div class="blackKeySpacer"></div>
-                </div>
-            </div>
-            
+      <div class="keyboardContainer">
+        <div class="octaveContainer" data-octave="3">
+          <div class="whiteKeyContainer">
+            <button class="whiteKey" data-note="c">
+              <h2>C</h2>
+            </button>
+            <button class="whiteKey" data-note="d">
+              <h2>D</h2>
+            </button>
+            <button class="whiteKey" data-note="e">
+              <h2>E</h2>
+            </button>
+            <button class="whiteKey" data-note="f">
+              <h2>F</h2>
+            </button>
+            <button class="whiteKey" data-note="g">
+              <h2>G</h2>
+            </button>
+            <button class="whiteKey" data-note="a">
+              <h2>A</h2>
+            </button>
+            <button class="whiteKey" data-note="b">
+              <h2>B</h2>
+            </button>
+          </div>
+          <div class="blackKeyContainer">
+            <div class="blackKeySpacer"></div>
+            <button class="blackKey" data-note="c#">
+              <h3>C#</h3>
+            </button>
+            <button class="blackKey" data-note="d#">
+              <h3>D#</h3>
+            </button>
+            <div class="blackKeySpacer"></div>
+            <div class="blackKeySpacer"></div>
+            <button class="blackKey" data-note="f#">
+              <h3>F#</h3>
+            </button>
+            <button class="blackKey" data-note="g#">
+              <h3>G#</h3>
+            </button>
+            <button class="blackKey" data-note="a#">
+              <h3>A#</h3>
+            </button>
+            <div class="blackKeySpacer"></div>
+          </div>
         </div>
 
+        <div class="octaveContainer" data-octave="4">
+          <div class="whiteKeyContainer">
+            <button class="whiteKey" data-note="c">
+              <h2>C</h2>
+            </button>
+            <button class="whiteKey" data-note="d">
+              <h2>D</h2>
+            </button>
+            <button class="whiteKey" data-note="e">
+              <h2>E</h2>
+            </button>
+            <button class="whiteKey" data-note="f">
+              <h2>F</h2>
+            </button>
+            <button class="whiteKey" data-note="g">
+              <h2>G</h2>
+            </button>
+            <button class="whiteKey" data-note="a">
+              <h2>A</h2>
+            </button>
+            <button class="whiteKey" data-note="b">
+              <h2>B</h2>
+            </button>
+          </div>
+          <div class="blackKeyContainer">
+            <div class="blackKeySpacer"></div>
+            <button class="blackKey" data-note="c#">
+              <h3>C#</h3>
+            </button>
+            <button class="blackKey" data-note="d#">
+              <h3>D#</h3>
+            </button>
+            <div class="blackKeySpacer"></div>
+            <div class="blackKeySpacer"></div>
+            <button class="blackKey" data-note="f#">
+              <h3>F#</h3>
+            </button>
+            <button class="blackKey" data-note="g#">
+              <h3>G#</h3>
+            </button>
+            <button class="blackKey" data-note="a#">
+              <h3>A#</h3>
+            </button>
+            <div class="blackKeySpacer"></div>
+          </div>
+        </div>
+      </div>
     </main>
-
-</body>
+  </body>
 </html>

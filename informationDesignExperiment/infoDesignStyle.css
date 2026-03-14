@@ -14,7 +14,10 @@
 }
 
 body {
+    background-image: url(assets/SpaceBackground.jpeg);
+    background-size: cover;
     font-family: "Work Sans", serif;
+    font-weight: bold;
     background-color: var(--col01);
     color: var(--col02);
     display: flex;
@@ -51,6 +54,16 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+.container2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.container3 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 h2 {
     margin-top: 100px;
@@ -65,27 +78,34 @@ h3 {
 }
 
 h4 {
-    z-index: 4;
+    z-index: -3;
     position: relative;
     right: 80px;
     bottom: 20px;
+    font-size: 10px;
 }
 .innercontainer1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #reducevolume {
+    position: relative;
     width: 50px;
+    display: flex;
+    justify-content: flex-end;
+max-height: 20px;
 }
-#var1range {
-    width: 50px;
-}
+
 
 #increasevolume {
     width: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 span {
@@ -104,28 +124,211 @@ span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
 #reducereverb {
     width: 50px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 }
 #increasereverb {
     width: 50px;
+    position: relative;
 }
 
-#var2range {
-    width: 50px ;
-}
+
 
 #reducepitch {
     width: 50px;
+    align-items: end;
 }
 
-#var3range {
-    width: 50px;
-}
 
 #increasepitch {
     width: 50px;
+}
+
+#tooltip1 { 
+    z-index: 1;
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    opacity: 0;
+    text-shadow:  -1px -1px  #000,
+    1px -1px  #000,
+    -1px 1px  #000,
+    1px 1px #000;
+}
+
+
+
+#tooltip2 {
+    z-index: 1;
+    position: absolute;
+    font-size: 20px;
+    left: 25px;
+    opacity: 0;
+    text-shadow:  -1px -1px  #000,
+    1px -1px  #000,
+    -1px 1px  #000,
+    1px 1px #000;
+}
+
+#tooltip3 {
+     z-index: 1;
+    position: absolute;
+    right: 25px;
+    font-size: 20px;
+    opacity: 0;
+    text-shadow:  -1px -1px  #000, 1px -1px  #000,-1px 1px  #000, 1px 1px #000;
+}
+
+#tooltip4 {
+       z-index: 1;
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    left: 50px;
+    opacity: 0;
+    text-shadow:  -1px -1px  #000,1px -1px  #000,-1px 1px  #000,1px 1px #000;
+}
+#tooltip5 {
+     z-index: 1;
+    position: absolute;
+    right: 202px;
+    font-size: 20px;
+    opacity: 0;
+    text-shadow:  -1px -1px  #000,1px -1px  #000,-1px 1px  #000,1px 1px #000;
+}
+
+#tooltip6 {
+     z-index: 1;
+    position: absolute;
+    left: 207px;
+    font-size: 20px;
+    opacity: 0;
+    text-shadow:  -1px -1px  #000,
+    1px -1px  #000,
+    -1px 1px  #000,
+    1px 1px #000;
+}
+
+#hover1:hover + #tooltip1 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#hover1:hover {
+    cursor: none;
+}
+
+#hover2:hover {
+    cursor: none;
+}
+
+#hover2:hover + #tooltip2 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#hover3:hover {
+    cursor: none;
+}
+#hover3:hover ~ #tooltip3 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#hover4:hover {
+    cursor: none;
+}
+#hover4:hover ~ #tooltip4 {
+    opacity: 1;
+    transition: 0.2s;
+}
+#reducepitch:hover ~ #tooltip5 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+#reducepitch:hover {
+    cursor: none;
+}
+
+#increasepitch:hover {
+    cursor: none;
+}
+
+#increasepitch:hover ~ #tooltip6 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.blackKey {
+    color: white;
+}
+
+h2 {
+    pointer-events: none;
+}
+
+h3 {
+    pointer-events: none;
+}
+
+#var1Range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  background: #dddddd85;
+  border-radius: 2px;
+  outline: none;
+}
+
+#var2Range {
+     -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  background: #dddddd85;
+  border-radius: 2px;
+  outline: none;
+}
+
+#var3Range {
+     -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  background: #dddddd85;
+  border-radius: 2px;
+  outline: none;
+}
+
+#var1Range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+#var2Range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+#var3Range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 3px;
 }

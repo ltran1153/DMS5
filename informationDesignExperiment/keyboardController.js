@@ -5,6 +5,21 @@ const whiteKeys = document.getElementsByClassName("whiteKey");
 const blackKeys = document.getElementsByClassName("blackKey");
 const allKeys = Array.from(whiteKeys).concat(Array.from(blackKeys));
 
+
+const Slider1 = document.querySelector("#var1Range");
+window.onload = function() {
+    Slider1.value = -24;
+}
+const Slider2 = document.querySelector("#var2Range");
+window.onload = function() {
+    Slider2.value = 13;
+}
+
+const Slider3 = document.querySelector("#var3Range");
+window.onload = function() {
+    Slider3.value = 50;
+}
+
 // we can then run a forEach loop on every key, adding the appropriate eventListeners
 allKeys.forEach(key => {
    // runs when button held down over key

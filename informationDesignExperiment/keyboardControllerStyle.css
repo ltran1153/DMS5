@@ -63,6 +63,16 @@
 .whiteKey.activeKey {
     background-color: var(--col06);
 }
+
 .blackKey.activeKey {
     background-color: var(--col05);
+}
+
+
+.whiteKey.activeKey h2 {
+   color: aqua;
+}
+
+.blackKey.activeKey h3 {
+    color: rgb(0, 0, 0);
 }

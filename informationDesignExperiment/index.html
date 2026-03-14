@@ -35,13 +35,15 @@
          <div class="container1">
         <div class="innercontainer1">
            <div id="reducevolume">
-            <span>🦻🏿
-                <h4>Reduce Volume</h4>
-            </span>
+             <span id="hover1">🦻🏿</span>
+            <span id="tooltip1">
+                Reduce Volume
+            </span> 
             </div>
-        <input type="range" id="var1Range" min="-48" max="0" step="1" value="1">
+        <input type="range" id="var1Range" min="-48" max="0" step="1" value="-24">
         <div id="increasevolume">
-        <span>👂🏿</span>
+            <span id="hover2">👂🏿</span>
+            <span id="tooltip2">Increase Volume</span>
         </div>
         </div>
         <label for="var1Range"> Volume</label>
@@ -49,21 +51,25 @@
 <div class="container2">    
     <div class="innercontainer2">
         <div id="reducereverb">
-        <span>👽</span>
+            <span id="hover3">👽</span>
+            <span id="tooltip3">Reduce Reverb</span>
         </div>
-        <input type="range" id="var2Range" min="1" max="25" step="1" value="5">
+        <input type="range" id="var2Range" min="1" max="25" step="1" value="13">
         <div id="increasereverb">
-        <span>👽👽👽👽</span>
+            <span id="hover4">👽👽👽👽</span>
+            <span id="tooltip4">Increase Reverb</span>
         </div>
         </div>
-        <label for="var2Range">Reverb   </label>
+        <label for="var2Range">Reverb</label>
         </div>
 
 <div class="container3">
     <div class="innercontainer3">
         <span id="reducepitch">🐂</span>
-        <input type="range" id="var3Range" min="1" max="100" step="1" value="1">
+        <span id="tooltip5">Reduce Pitch</span>
+        <input type="range" id="var3Range" min="1" max="100" step="1" value="50">
            <span id="increasepitch">🍽️</span>
+           <span id="tooltip6">Increase Pitch</span>
         </div>
         <label for="var3Range">Pitch</label>
         </div>

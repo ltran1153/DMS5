@@ -1,0 +1,11 @@
+#ClickButoon {
+    width: 5rem;
+}
+
+#ClickButton:hover {
+    cursor: no-drop;
+}
+
+#ClickButton:active {
+    width: 10rem;
+}

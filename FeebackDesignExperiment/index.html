@@ -1,29 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChangeMe</title>
 
     <script src="https//cdnjs.com/libraries/tone"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.3.5/Tone.js" integrity="sha512-F1myjNkIKU5XJtOs1HXRo/zOjiUsABgFEEGKLx/riwK82jRThZFebEnfF2HWo9eeC+iC1Nwwnn9Vj6OGq+r7rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.3.5/Tone.js"
+      integrity="sha512-F1myjNkIKU5XJtOs1HXRo/zOjiUsABgFEEGKLx/riwK82jRThZFebEnfF2HWo9eeC+iC1Nwwnn9Vj6OGq+r7rQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="FeedbackStyle.css" />
 
-    <script src="main.js" defer></script>
-</head>
-<body>
-     <dialog id="Warning">
-            <p>This Page Will Make Some Noise</p>
-            <button id="Acknowledged">Enter</button>
-        </dialog>
+    <script src="FeedbackMain.js" defer></script>
+  </head>
+  <body>
+    <dialog id="Warning">
+      <p>This Page Will Make Some Noise</p>
+      <button id="Acknowledged">Enter</button>
+    </dialog>
     <h1>Tone Template</h1>
 
     <main>
-        <button id="ClickButton">
-            Click Me
-        </button>
-
+      <button id="ClickButton">Click Me</button>
     </main>
-</body>
+  </body>
 </html>

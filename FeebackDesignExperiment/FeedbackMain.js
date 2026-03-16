@@ -26,10 +26,12 @@ PlayButton.addEventListener("click", PlayNote)
 
 function StartNote() {
   synth.triggerAttack("C4")
+  document.body.style.backgroundColor = "black";
 }
 
 function EndNote() {
   synth.triggerRelease()
+  document.body.style.backgroundColor = "yellow";
 }
 
 PlayButton.addEventListener("mousedown", StartNote)

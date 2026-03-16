@@ -1,5 +1,12 @@
-#ClickButoon {
+#ClickButton {
     width: 5rem;
+}
+
+#ClickButtonContainer {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #ClickButton:hover {
@@ -9,3 +16,9 @@
 #ClickButton:active {
     width: 10rem;
 }
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+

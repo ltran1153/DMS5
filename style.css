@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&display=swap');
+
+
 body {
   background-color: red;
   color: white;
@@ -11,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Bitcount Prop Double;
 }
 
 #IntroductionParagraph {

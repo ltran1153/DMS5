@@ -1,24 +1,60 @@
-#ClickButton {
-    width: 5rem;
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Datatype:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: white;
 }
 
-#ClickButtonContainer {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+#ClickButton {
+  width: 5rem;
+  margin: auto;
+  margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #ClickButton:hover {
-    cursor: no-drop;
+  cursor: pointer;
 }
 
 #ClickButton:active {
-    width: 10rem;
+  transform: scale(19);
+  transition-duration: 5s;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  font-family: Datatype;
 }
 
+#Warning[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Acknowledged {
+  width: 8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Acknowledged:hover {
+  cursor: pointer;
+}
+
+#number {
+  font-size: 20rem;
+  font-family: Pixelify Sans;
+}

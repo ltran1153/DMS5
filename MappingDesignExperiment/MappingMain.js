@@ -4,6 +4,8 @@ const CircleButton = document.getElementById("CircleButton")
 const ChangeRed = document.getElementById("Red")
 const ChangeYellow = document.getElementById("Yellow")
 const ChangeBlue = document.getElementById("Blue")
+const Brightness = document.getElementById("Brightness")
+const Contrast = document.getElementById("Contrast")
 //find width
 let stageContainerWidth = stageContainer.offsetWidth
 console.log(stageContainerWidth)
@@ -36,8 +38,17 @@ function DrawNewCircle() {
     radius: 50 * Math.random(),
     fill: CircleColor,
   })
+  //cache is required to set filters
+  circle.cache()
+  //enabling different types of filters
+  circle.filters([Konva.Filters.Contrast, Konva.Filters.Brighten])
+  // This changes contrast based on "range" value
+  circle.contrast(parseFloat(Contrast.value))
+  // This changes brightness based on "number" value
+  circle.brightness(parseFloat(Brightness.value))
   console.log(circle)
   firstLayer.add(circle)
+  firstLayer.draw()
 }
 
 CircleButton.addEventListener("click", DrawNewCircle)

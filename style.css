@@ -79,6 +79,10 @@ h3 {
 #ExperimentLinks {
   font-size: 1.25rem;
   font-family: Datatype;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 #ProjectSpeculation {
@@ -116,4 +120,12 @@ h5 {
 
 a {
   color: cyan;
+}
+
+#Experiment {
+  color: blue;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  width: 20rem;
+  text-align: center;
 }

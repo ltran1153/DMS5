@@ -5,6 +5,6 @@ main {
 }
 
 .stageContainer {
-    background-color: coral;
+    background-color: rgb(124, 124, 124);
     flex: 1;
 }

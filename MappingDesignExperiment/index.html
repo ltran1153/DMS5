@@ -12,11 +12,27 @@
     <script src="https://unpkg.com/konva@10/konva.min.js"></script>
 
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="MappingStyle.css" />
+    <script src="MappingMain.js" defer></script>
   </head>
   <body>
     <main>
+      <div>
+        <input type="radio" name="ColorPick" id="Red" value="red" checked />
+        <label for="Red">Red</label>
+        <input type="radio" name="ColorPick" id="Yellow"  value="yellow" checked/>
+        <label for="Yellow">Yellow</label>
+        <input type="radio" name="ColorPick" id="Blue" value="blue" checked />
+        <label for="Blue">Blue</label>
+      </div>
+      <div>
+        <input type= "number" id="Brightness" min="0" max="100" value="50">
+        Brightness
+      </div>
+      <div> 
+        <input type="range">
+        Saturation
+      </div>
       <div class="toolBar"></div>
       <button id="CircleButton">draw a new circle</button>
 

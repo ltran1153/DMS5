@@ -1,6 +1,9 @@
 //find our elements
 const stageContainer = document.getElementById("stage-container")
 const CircleButton = document.getElementById("CircleButton")
+const ChangeRed = document.getElementById("Red")
+const ChangeYellow = document.getElementById("Yellow")
+const ChangeBlue = document.getElementById("Blue")
 //find width
 let stageContainerWidth = stageContainer.offsetWidth
 console.log(stageContainerWidth)
@@ -21,7 +24,6 @@ let CircleColor = "red"
 //create our layer
 const firstLayer = new Konva.Layer()
 
-
 //add layer to stage
 stage.add(firstLayer)
 
@@ -39,3 +41,13 @@ function DrawNewCircle() {
 }
 
 CircleButton.addEventListener("click", DrawNewCircle)
+
+function ChangeColor(Choose) {
+  let ColorChange = Choose.target.value
+
+  CircleColor = ColorChange
+}
+
+ChangeRed.addEventListener("click", ChangeColor)
+ChangeYellow.addEventListener("click", ChangeColor)
+ChangeBlue.addEventListener("click", ChangeColor)

@@ -3,7 +3,9 @@ main {
   flex-direction: column;
   height: 100vh;
 }
-
+body {
+    overflow: hidden;
+}
 .stageContainer {
   background-color: rgb(124, 124, 124);
   flex: 1;
@@ -23,7 +25,8 @@ h1 {
   font-size: 2rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
+/* differentiating the button by making it green compared to black and white color palette.
+This is to users know that it is an interactable button*/
 #CircleButton {
   width: 9rem;
   height: 3rem;

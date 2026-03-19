@@ -62,3 +62,23 @@ function ChangeColor(Choose) {
 ChangeRed.addEventListener("click", ChangeColor)
 ChangeYellow.addEventListener("click", ChangeColor)
 ChangeBlue.addEventListener("click", ChangeColor)
+
+/*For this experiment I decided to see the potential usages of different input controls
+by using different input types to control different elements of color (Hue, Brightness, Contrast).
+ 
+I used the radio input to control hue following the class tutorial. This input limits and lays out
+ precisely the different options users have to choose from, in this case, colors: red, yellow, and blue.
+ The advantage of this input is in its clarity; Users have limited options laid out right in front of them,
+  meaning they don't have to play around with the input to get the desired results
+ 
+ To control the brightness, I decided on the number input. The number input allows users to control values
+ in set increments and provides two methods of control; clicking provides precise incremental jumps in values
+ while holding down the button quickly moves through the range of values. The advantage of this input is
+ that it allows the users a wider range of control for users than the radio input, while providing 
+ the same precision, it also allows users to quickly go to the limit of the input by holding down the button 
+ 
+For contrast controls, I used the range input, which is a slider. The slider input controls its values based on where
+the thumb is on its track. The slider is easily the most efficient method of selecting from a range of values, however,
+it sacrifices the precise controls that the other two inputs provide. When providing the users with a wide value range,
+it is often best to use the slider, as it is the most efficient and precise input when it comes to controlling wide ranges;
+taking less area than radio input, more precise than holding down number input button*/

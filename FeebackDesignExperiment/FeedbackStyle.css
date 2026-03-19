@@ -45,6 +45,13 @@ without [open] display:flex; interferes with the button and dialog function*/
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  /*Dialog boxes behave differently and cannot be moved via flex; this code brings box into the center*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
 }
 
 #dialogtext {

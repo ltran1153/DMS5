@@ -68,7 +68,9 @@
     background-color: var(--col05);
 }
 
-
+/*Changing the letter colors with their active key,
+to indicate that the key and label are the same element.
+*/
 .whiteKey.activeKey h2 {
    color: aqua;
 }

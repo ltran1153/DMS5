@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Datatype:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+/*This is to ensure the project area is display size, and removes any excess element beyond the display*/
 body {
   width: 100vw;
   height: 100vh;
@@ -7,14 +8,14 @@ body {
   overflow: hidden;
   background-color: white;
 }
-
+/*Aligns the button at the center*/
 #ClickButton {
   width: 5rem;
   margin: auto;
   margin-top: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Makes it so that the elements inside only move within the display size*/
 main {
   height: 100%;
   width: 100%;
@@ -23,11 +24,11 @@ main {
   align-items: center;
   flex-direction: column;
 }
-
+/* Feedback to show users they hovering over an interactive element*/
 #ClickButton:hover {
   cursor: pointer;
 }
-
+/* engaging feedback for a common action users do with buttons, which is hold them */
 #ClickButton:active {
   transform: scale(19);
   transition-duration: 5s;
@@ -38,7 +39,8 @@ h1 {
   justify-content: center;
   font-family: Datatype;
 }
-
+/* the [open] is there to ensure the styling on applies when the dialog is active; 
+without [open] display:flex; interferes with the button and dialog function*/
 #Warning[open] {
   display: flex;
   flex-direction: column;
@@ -53,7 +55,7 @@ h1 {
   width: 8rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+/* Feedback to show users they hovering over an interactive element*/
 #Acknowledged:hover {
   cursor: pointer;
 }

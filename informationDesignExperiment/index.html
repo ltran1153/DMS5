@@ -39,12 +39,14 @@
     <main>
       <h1>Information Design Experiment</h1>
 
-      <!-- !!!! -->
       <!-- These are the three range elements we will be working on for this exercise -->
       <div class="container1">
         <div class="innercontainer1">
+          <!--the icon is placed above the text counterintuitively, because of html hierarchy system,
+          where elements below cannot trigger events for elements on top-->
           <div id="reducevolume">
             <span id="hover1">🦻🏿</span>
+            <!--Tooltip to provide more detailed information of what this side of the slider will do-->
             <span id="tooltip1"> Reduce Volume </span>
           </div>
           <input
@@ -55,17 +57,26 @@
             step="1"
             value="-24"
           />
+
           <div id="increasevolume">
+            <!--These icons show what the sliders in a fun way that matches the aesthetic, however
+            it can be a little confusing, therefore I added tooltips as an explanation for what
+            the icons mean-->
             <span id="hover2">👂🏿</span>
+            <!--Tooltip to provide more detailed information of what this side of the slider will do-->
             <span id="tooltip2">Increase Volume</span>
           </div>
         </div>
+        <!--Labeling what the sliders change audiowise for the synthetic keyboard-->
         <label for="var1Range"> Volume</label>
       </div>
       <div class="container2">
         <div class="innercontainer2">
           <div id="reducereverb">
+            <!--the icon is placed above the text counterintuitively, because of html hierarchy system,
+          where elements below cannot trigger events for elements on top-->
             <span id="hover3">👽</span>
+            <!--Tooltip to provide more detailed information of what this side of the slider will do-->
             <span id="tooltip3">Reduce Reverb</span>
           </div>
           <input
@@ -78,6 +89,7 @@
           />
           <div id="increasereverb">
             <span id="hover4">👽👽👽👽</span>
+            <!--Tooltip to provide more detailed information of what this side of the slider will do-->
             <span id="tooltip4">Increase Reverb</span>
           </div>
         </div>
@@ -86,7 +98,10 @@
 
       <div class="container3">
         <div class="innercontainer3">
+          <!--the icon is placed above the text counterintuitively, because of html hierarchy system,
+          where elements below cannot trigger events for elements on top-->
           <span id="reducepitch">🐂</span>
+          <!--Tooltip to provide more detailed information of what this side of the slider will do-->
           <span id="tooltip5">Reduce Pitch</span>
           <input
             type="range"
@@ -97,6 +112,7 @@
             value="50"
           />
           <span id="increasepitch">🍽️</span>
+          <!--Tooltip to provide more detailed information of what this side of the slider will do-->
           <span id="tooltip6">Increase Pitch</span>
         </div>
         <label for="var3Range">Pitch</label>
@@ -108,6 +124,9 @@
         input in class, but feel free to reference my code patter. I've modularised the CSS &
         JS portions into their own file, but they rely on an HTML structure like that below.
         -->
+
+      <!--I am adding letter labels to each key in this div because users newer to instruments
+        find it easier to look at letter labels than the keys-->
       <div class="keyboardContainer">
         <div class="octaveContainer" data-octave="3">
           <div class="whiteKeyContainer">

@@ -1,284 +1,301 @@
 /*import font*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*define custom variables*/
-:root{
-    /* Late Night Bath Palette by sukinapan https://lospec.com/palette-list/late-night-bath */
-    --col01: #282d3c;
-    --col02: #f0f6f0;
-    --col03: #ffc4b8;
-    --col04: #5b5d70;
-    --col05: #74838c;
-    --col06: #f69197;
-    --border: solid 2px var(--col04);
+:root {
+  /* Late Night Bath Palette by sukinapan https://lospec.com/palette-list/late-night-bath */
+  --col01: #282d3c;
+  --col02: #f0f6f0;
+  --col03: #ffc4b8;
+  --col04: #5b5d70;
+  --col05: #74838c;
+  --col06: #f69197;
+  --border: solid 2px var(--col04);
 }
-
+/* From research, aesthetic is also a an important part of information design,
+as it engages the audience with the information, while also providing the audience
+with context for a tool's function*/
 body {
-    background-image: url(assets/SpaceBackground.jpeg);
-    background-size: cover;
-    font-family: "Work Sans", serif;
-    font-weight: bold;
-    background-color: var(--col01);
-    color: var(--col02);
-    display: flex;
-    flex-direction: column;
-    /*align-items: center;*/
-    gap: 2rem;
-    max-width: 1280px;
-    padding: 0 3rem;
-    margin: 0 auto;
-    line-height: 1.5;
+  background-image: url(assets/SpaceBackground.jpeg);
+  background-size: cover;
+  font-family: "Work Sans", serif;
+  /* bold font makes the information in this project easier to see, and matches with
+    the aesthetic*/
+  font-weight: bold;
+  background-color: var(--col01);
+  color: var(--col02);
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  gap: 2rem;
+  max-width: 1280px;
+  padding: 0 3rem;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding-top: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
 }
 
 /*intro modal dialog*/
 dialog[open] {
-    margin: auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .container1 {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container2 {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container3 {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/*aligning text on piano to fit better visually; which is important information design
+because elements that look off can confuse users*/
 h2 {
-    margin-top: 100px;
-    display: flex;
-flex-direction: column;
-align-content: center;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 h3 {
-    margin-top: 40px;
-    align-content: center;
+  margin-top: 40px;
+  align-content: center;
 }
 
-h4 {
-    z-index: -3;
-    position: relative;
-    right: 80px;
-    bottom: 20px;
-    font-size: 10px;
-}
 .innercontainer1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
+/* Using position: relative, allows me to use position: absolute on a child
+element, within the area of this container */
 #reducevolume {
-    position: relative;
-    width: 50px;
-    display: flex;
-    justify-content: flex-end;
-max-height: 20px;
+  position: relative;
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+  max-height: 20px;
 }
-
 
 #increasevolume {
-    width: 50px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
+  width: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 span {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .innercontainer2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .innercontainer3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
 
 #reducereverb {
-    width: 50px;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
 }
 #increasereverb {
-    width: 50px;
-    position: relative;
+  width: 50px;
+  position: relative;
 }
-
-
 
 #reducepitch {
-    width: 50px;
-    align-items: end;
+  width: 50px;
+  align-items: end;
 }
-
 
 #increasepitch {
-    width: 50px;
+  width: 50px;
 }
-
-#tooltip1 { 
-    z-index: 1;
-    position: absolute;
-    right: 25px;
-    font-size: 20px;
-    opacity: 0;
-    text-shadow:  -1px -1px  #000,
-    1px -1px  #000,
-    -1px 1px  #000,
+/*Position: absolute takes element out of natural document flow,
+allowing me to control it freely, without interfering with other elements.
+This is to accurately position the tooltips where I want them*/
+#tooltip1 {
+  z-index: 1;
+  position: absolute;
+  right: 25px;
+  font-size: 20px;
+  /*Tooltip will be a hover element, where it is normally invisible until users
+    hover over its adjacent icons*/
+  opacity: 0;
+  /* Text shadow provides outline to make text easier to read, otherwise it blends
+    with background and makes it hard to see*/
+  text-shadow:
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
     1px 1px #000;
 }
 
-
-
 #tooltip2 {
-    z-index: 1;
-    position: absolute;
-    font-size: 20px;
-    left: 25px;
-    opacity: 0;
-    text-shadow:  -1px -1px  #000,
-    1px -1px  #000,
-    -1px 1px  #000,
+  z-index: 1;
+  position: absolute;
+  font-size: 20px;
+  left: 25px;
+  opacity: 0;
+  text-shadow:
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
     1px 1px #000;
 }
 
 #tooltip3 {
-     z-index: 1;
-    position: absolute;
-    right: 25px;
-    font-size: 20px;
-    opacity: 0;
-    text-shadow:  -1px -1px  #000, 1px -1px  #000,-1px 1px  #000, 1px 1px #000;
-}
-
-#tooltip4 {
-       z-index: 1;
-    position: absolute;
-    font-size: 20px;
-    top: 10px;
-    left: 50px;
-    opacity: 0;
-    text-shadow:  -1px -1px  #000,1px -1px  #000,-1px 1px  #000,1px 1px #000;
-}
-#tooltip5 {
-     z-index: 1;
-    position: absolute;
-    right: 202px;
-    font-size: 20px;
-    opacity: 0;
-    text-shadow:  -1px -1px  #000,1px -1px  #000,-1px 1px  #000,1px 1px #000;
-}
-
-#tooltip6 {
-     z-index: 1;
-    position: absolute;
-    left: 207px;
-    font-size: 20px;
-    opacity: 0;
-    text-shadow:  -1px -1px  #000,
-    1px -1px  #000,
-    -1px 1px  #000,
+  z-index: 1;
+  position: absolute;
+  right: 25px;
+  font-size: 20px;
+  opacity: 0;
+  text-shadow:
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
     1px 1px #000;
 }
 
-#hover1:hover + #tooltip1 {
-    opacity: 1;
-    transition: 0.2s;
+#tooltip4 {
+  z-index: 1;
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  left: 50px;
+  opacity: 0;
+  text-shadow:
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000;
+}
+#tooltip5 {
+  z-index: 1;
+  position: absolute;
+  right: 202px;
+  font-size: 20px;
+  opacity: 0;
+  text-shadow:
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000;
 }
 
+#tooltip6 {
+  z-index: 1;
+  position: absolute;
+  left: 207px;
+  font-size: 20px;
+  opacity: 0;
+  text-shadow:
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000;
+}
+/* This will reveal the tooltips when hovering over the Icons. This is important
+because the tooltips feel like an invasive piece of information design when visible
+100% of the time*/
+#hover1:hover + #tooltip1 {
+  opacity: 1;
+  transition: 0.2s;
+}
+/* cursor is invisible when hovered over icons. This brings attention to the icons
+as an important piece of interaction*/
 #hover1:hover {
-    cursor: none;
+  cursor: none;
 }
 
 #hover2:hover {
-    cursor: none;
+  cursor: none;
 }
 
 #hover2:hover + #tooltip2 {
-    opacity: 1;
-    transition: 0.2s;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 #hover3:hover {
-    cursor: none;
+  cursor: none;
 }
 #hover3:hover ~ #tooltip3 {
-    opacity: 1;
-    transition: 0.2s;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 #hover4:hover {
-    cursor: none;
+  cursor: none;
 }
 #hover4:hover ~ #tooltip4 {
-    opacity: 1;
-    transition: 0.2s;
+  opacity: 1;
+  transition: 0.2s;
 }
 #reducepitch:hover ~ #tooltip5 {
-    opacity: 1;
-    transition: 0.2s;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 #reducepitch:hover {
-    cursor: none;
+  cursor: none;
 }
 
 #increasepitch:hover {
-    cursor: none;
+  cursor: none;
 }
 
 #increasepitch:hover ~ #tooltip6 {
-    opacity: 1;
-    transition: 0.2s;
+  opacity: 1;
+  transition: 0.2s;
 }
 
 .blackKey {
-    color: white;
+  color: white;
 }
 
 h2 {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 h3 {
-    pointer-events: none;
+  pointer-events: none;
 }
-
+/*Changing slider visual to fit with overall aesthetic*/
 #var1Range {
   -webkit-appearance: none;
   appearance: none;
@@ -289,7 +306,7 @@ h3 {
 }
 
 #var2Range {
-     -webkit-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   height: 10px;
   background: #dddddd85;
@@ -298,7 +315,7 @@ h3 {
 }
 
 #var3Range {
-     -webkit-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   height: 10px;
   background: #dddddd85;

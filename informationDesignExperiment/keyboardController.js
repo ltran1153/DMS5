@@ -4,6 +4,11 @@ const whiteKeys = document.getElementsByClassName("whiteKey")
 const blackKeys = document.getElementsByClassName("blackKey")
 const allKeys = Array.from(whiteKeys).concat(Array.from(blackKeys))
 
+//This sets the slider value exactly to the middle when loading the page.
+// This makes the layout of the project look orderly when users first load onto the page
+// *Note* I missed a much easier way to set slider value to the middle because I couldn't
+// see what was displacing the value during this time. I could have just changed slider 
+// default value on main.js
 const Slider1 = document.querySelector("#var1Range")
 const Slider2 = document.querySelector("#var2Range")
 const Slider3 = document.querySelector("#var3Range")

@@ -18,13 +18,17 @@
     <script src="FeedbackMain.js" defer></script>
   </head>
   <body>
+    <!--A popup box to give users a warning before they enter the website-->
     <dialog id="Warning">
       <p id="dialogtext">This Page Contains loud noises and flashing lights</p>
       <button id="Acknowledged" type="button">GOTCHU</button>
     </dialog>
     <main>
       <h1>Feedback Experiment</h1>
+      <!--This number will increase based on number clicks. 
+      This is to provide users with a sense of progression when clicking the button-->
       <div id="number">0</div>
+      <!--This button will be the single interaction users have on the website-->
       <button id="ClickButton">Click Me</button>
     </main>
   </body>

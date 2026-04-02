@@ -1,0 +1,20 @@
+#generateBtn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#canvasArea {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#konva-container {
+  width: 800px;
+  height: 500px;
+  background: white;
+  border: 2px solid #ccc;
+}

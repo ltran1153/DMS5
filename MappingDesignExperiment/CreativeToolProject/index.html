@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="CreativeToolStyle.css" />
+
+    <script src="CreativeToolMain.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section id="controls">
+        <h1>Mad Libs Generator</h1>
+
+        <label>
+          Adjective:
+          <input type="text" id="adjective" placeholder="funny" />
+        </label>
+
+        <label>
+          Noun:
+          <input type="text" id="noun" placeholder="cat" />
+        </label>
+
+        <label>
+          Verb:
+          <input type="text" id="verb" placeholder="dance" />
+        </label>
+
+        <label>
+          Place:
+          <input type="text" id="place" placeholder="park" />
+        </label>
+
+        <button id="generateBtn">Generate Story</button>
+      </section>
+
+      <section id="canvasArea">
+        <div id="konva-container"></div>
+      </section>
+    </main>
+    <!-- For this project, I am going to create a reading tool that allows users  to add their own input to what they read.
+     A core feature in this tool, will be a list of words that the user can choose from to create a story. The tool will provide
+     a description to the user and based on that description the user must choose words from a large list and find one that fits.
+     If the user chooses wrong, the story will sound weird. This creative tool will assist users in learning word meaning and context.
+     -->
+  </body>
+</html>

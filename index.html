@@ -172,6 +172,221 @@
           interactions can feel engaging and intuitive.
         </p>
       </section>
+      <section id="ProjectSpeculation">
+        <h4>Development and Prototyping</h4>
+        <h5>Conceptual Response:</h5>
+        <p id="SpeculationParagraph">
+          Since my project speculation, I have chosen to finalize my creative
+          context from a previously abstract literature generator into a
+          concrete mad-libs styled project that allows users to influence the
+          stories that they are reading. I have taken three key ideas from my
+          project speculation: humor, gamification (through narrative,
+          aesthetic, and design), and the exploration of new words, and made
+          them the main principles to build my project on. These principles
+          combined make my project unique, adding originality to all three
+          interaction design principles of information design, feedback, and
+          mapping.
+          <br />
+          My project’s information design stands out for its simplicity and
+          aesthetic. All information in this project will fit in one display and
+          immediately stand out, which should allow users to experiment and
+          understand the functions of each interaction quickly. The aesthetic of
+          my design is based on a narrative of a wandering bard who travels
+          across different regions to perform. This aesthetic choice provides a
+          unique context and visuals that other mad-libs-style tools don’t have,
+          and it also makes it easier for users to grasp the purpose of this
+          tool. By providing context that the user is playing as a wandering
+          bard telling stories, the users will understand why they are selecting
+          words and filling a passage with random words.
+          <br />
+          The feedback design of my project aims to immerse the users in the
+          narrative context of my project, as well as provide humor. By creating
+          tavern/ fantasy themed feedback through areas such as sound and
+          visuals, users should be more immersed in the narrative, controlling
+          the outcome of the story, and the music the bard will play, as well as
+          the bard’s reactions. A part of the humor in this project comes from
+          the mad-libs story; however, by itself, the story is neither very
+          funny nor original. A large part of this project’s humor comes from
+          the way the mad-libs is framed in the context of a bard improvising a
+          story to tell their audience. The mad-libs creation, combined with the
+          bard reactions and music, is what makes this project’s humor stand
+          out.
+          <br />
+          The mapping design for this project is guided by its ease of use, as
+          well as helping users discover or use words that are very uncommon in
+          their vocabulary. There is very little complexity in my project’s
+          interactions that would require users to spend a lot of time or put
+          any effort into use at its full capacity, as everything is designed to
+          be a single click. By creating a list of words for the users to choose
+          from, instead of letting users pick their own words, I removed the
+          need to think of words, therefore users can quickly and effortlessly
+          generate humorous mad-libs in a few clicks. Additionally, by creating
+          a preset list of words and filling it with weird and uncommon words,
+          it allows users to see and test new words that they might have never
+          used before, likely enhancing the comedy, as well as introducing a
+          word to their vocabulary.
+          <br />
+          Overall, by adding some constraints and applying the tool to a very
+          unique context, I believe I was able to create something purposeful
+          and original.
+        </p>
+
+        <h5>Technical Response:</h5>
+        <p id="SpeculationParagraph">
+          I believe that the main coding for this project will come down to two
+          elements: a list and a randomizer.
+          <br />
+          To create a list, I can use a JavaScript array to add all of my words
+          into a list and create functions based on that list. From reading the
+          many possibilities of arrays from
+          <a
+            href="https://www.w3schools.com/jsref/jsref_obj_array.asp"
+            target="_blank"
+          >
+            www.w3schools.com/jsref/jsref_obj_array.asp</a
+          >, there are a few pieces of code that stick out. The forEach() code
+          treats every item in an array as separate and applies any functions I
+          write to all items inside the array individually. This will be very
+          important as it will allow me to create a large quantity of items all
+          at once. The other code I find crucial is slice(). This code allows me
+          to select a specific item or a number of items from my array instead
+          of the entire list. This is important because when combined with a
+          randomizer, the item that slice() selects will be random, creating a
+          different list of words for the users to see each time.
+          <br />
+          Randomness is created by the math.random() function in JavaScript. By
+          applying the math.random() function to things such as scale or
+          position, it will randomize their values and provide a different
+          result each time an element loads. This will be useful, as randomly
+          placing words within an area is a key concept in my project. Although
+          math.random() is useful by itself for many applications, it is unable
+          to properly shuffle an array. To shuffle an array, we have to apply
+          math.random() through a specific algorithm called the Fisher-Yates
+          shuffle. This is a well-known algorithm for many web developers, with
+          the website where I learned and took the algorithm from being
+          <a
+            href="//dev.to/tanvir_azad/fisher-yates-shuffle-the-right-way-to-randomize-an-array-4d2p"
+            target="_blank"
+          >
+            dev.to/tanvir_azad/fisher-yates-shuffle-the-right-way-to-randomize-an-array-4d2p</a
+          >. This shuffle is considered to be one of the best pseudo-random
+          methods for developers to use, and the method I will be using for
+          randomizing my array.
+          <br />
+          To materialize the words inside my array into words that users can
+          see. I will be using the Konva-Template extension. By using the Konva
+          template, I can create an area where all of my words will be focused,
+          as well as separate different aspects of my tool into layers, such as
+          adjectives, verbs, nouns, and story. By doing this, I can control each
+          layer and its contents separately, such as revealing and hiding
+          certain layers when conditions are met. Using Konva.Text, I can turn
+          the words inside my array into text and stylize it all inside of
+          JavaScript instead of having to create elements in HTML and using CSS
+          to style.
+          <br />
+
+          Other than the creation of core elements, I can add extra feedback to
+          assist the main content, such as hover effects (:hover, mouseover), as
+          well as importing audio that plays when the user hovers or clicks
+          objects.
+          <br />
+          Overall, I have an idea of what types of functions I will be using,
+          but am not yet sure how implementing these functions would be like.
+        </p>
+      </section>
+
+      <section id="ExperimentContainer">
+        <h3>Prototype and Peer Review</h3>
+        <div id="ExperimentLinks">
+          <a
+            href="https://creativetool-prototype.netlify.app/"
+            target="_blank"
+            id="Experiment"
+          >
+            Creative Tool Prototype</a
+          >
+
+          <a
+            href="https://forms.office.com/pages/responsepage.aspx?id=cTYy0b7NF0S01L2yS1Exa37E72HrZFdLuyjsv5avTQNUN0pRVTJXRVVNUkNQSUQyS1FJWDVPQlJIUS4u&route=shorturl"
+            target="_blank"
+            id="Experiment"
+            >Peer Review Form</a
+          >
+       
+        </div>
+      </section>
+         <section id="ProjectSpeculation">
+             <h4>Peer Reflection</h4>
+        <p id="SpeculationParagraph">
+          Through the peer review responses, I was able to obtain insights into
+          my conceptual and technical application of the project that will be
+          crucial for my development moving forward.
+          <br />
+          My conceptual application of the project was overall very well
+          received. I found that my peers unanimously agreed that my framing and
+          application of “gamification” made the project stand out as something
+          original. The characterization and atmosphere created by my project’s
+          aesthetics and music seems to be the overall consensus for why my
+          project stood out, with some outlier responses stating the story and
+          randomness being a strong reason why it was unique. The story
+          generation loop of the project was overall well received with most
+          responses state wanting/somewhat wanting to see what different seeds
+          can be generated. When reading the recommendations for what could be
+          developed further, moving forward was for the story to be longer. This
+          makes me believe that the story is currently the weakest application
+          of my concept and will need to be focused on a lot more as I progress.
+          Other suggestions relate to variety when it comes to the project’s
+          visuals and audio, with some peers wanting more customization, while
+          others suggest random audio and visual assets. Some unique suggestions
+          state that I should add a word input option or an undo feature;
+          however, I believe these options go against my design principle.
+          Moving forward, I have to think about whether I want users to have
+          more customization over audio and visuals, or have it be a randomized
+          feature. Providing users with customization will keep them more
+          engaged via satisfaction, while randomness will keep users more
+          engaged via experimentation, as well as fit more with the overall
+          concept of the project.
+          <br />
+          My technical application of this project requires work when it comes
+          to information design. The text on my project right now is considered
+          difficult to read for a large number of users, which is primarily due
+          to the type of font I use, but also because of my color choices. The
+          other issue that a few users are encountering is related to the word
+          containers. Each user had a different issue with the containers being:
+          size, position, style, and color; therefore, fixing the containers
+          will be about striking a balance with the design to be as visually
+          clear as possible. I might also tune down the volume of my ambient
+          music, although only 1 user seems to have an issue with it, I don’t
+          think there will be any issue at large with tuning it down. There was
+          no overall issue with any users when it came to understanding how to
+          use the tool, despite not having any instructions directing users on
+          what to do. This shows that my project’s layout and simplicity worked
+          quite well. The project is also mostly rid of bugs, with most
+          responses stating that they did not notice any malfunctions. However,
+          there are two responses stating that my ambient button wasn’t working.
+          There wasn’t an explanation for the reasoning, but since I never
+          encountered the bug myself, I believe it could be because the ambient
+          does not apply to guitar music, or that the user did not have sound on
+          and mistook my meaning with “ambient”. A bug that none of the users
+          noted is that the position of the bard is sometimes misplaced on
+          different displays; this could be because the users didn’t see or
+          recognize it as a bug, but it is something that I intend to fix moving
+          forward.
+          <br />
+          My overall sentiment from reading the peer reviews for my prototype is
+          that my project is headed in the right direction, and my development
+          moving forward is defined and clear. I need to focus on evolving my
+          project’s strongest assets, being immersion through audio and visual
+          design, while keeping in mind information design to maintain good
+          visual clarity through many design variations.
+        </p>
+          </section>
+          <section id="ProjectSpeculation">
+            <h4>Project Timeline</h4>
+            <div>
+              <img id="timeline" src="/assets/timeline.png" alt="Timeline">
+            </div>
+          </section>
     </main>
   </body>
 </html>

@@ -16,11 +16,22 @@ body {
   align-items: center;
   font-family: Bitcount Prop Double;
 }
+.a3Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Bitcount Prop Double;
+}
 /*aligns everything at the center*/
 #IntroductionParagraph {
   display: flex;
   margin: auto;
 }
+#synopsis {
+  display: flex;
+  margin: auto;
+}
+
 /*This is so the elements inside have a restricted fill area, and aligned in a visually pleasing way*/
 #ProfilePicContainer {
   width: 30%;
@@ -30,7 +41,7 @@ body {
   justify-content: center;
   background-color: blue;
   margin-top: 2rem;
-  margin-right: 3rem;
+  transform: translateX(3rem);
 }
 /*This is so the elements inside have a restricted fill area, and aligned in a visually pleasing way*/
 #IntroInfo {
@@ -38,12 +49,19 @@ body {
   flex-direction: column;
   width: 60%;
   height: 90%;
-  margin-top: 3rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(3rem);
+}
+#finalProjectMain {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
 }
+
 /* This makes it so that this div will fill 90% of .Profile, 
 and the elements inside it will be laid out in a row instead of a column*/
 #ProfileArea {
@@ -54,16 +72,26 @@ and the elements inside it will be laid out in a row instead of a column*/
   background-color: black;
   border-radius: 3rem;
 }
-
+#finalProject {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  border-radius: 3rem;
+}
 h2 {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 #Yap {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2rem;
 }
-
+#synopsis {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+}
 #ExperimentContainer {
   height: 12rem;
   display: flex;
